@@ -31,6 +31,7 @@ build:
   manual:
     configure: |
       #exec bash
+      update-alternatives --auto automake
       autoreconf -ivf
       ./configure --prefix=${PREFIX} \
                   --libdir=${PREFIX}/lib \
